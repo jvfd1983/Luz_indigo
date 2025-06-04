@@ -38,7 +38,7 @@ function App() {
   const prevImage = () => setCurrent((current - 1 + images.length) % images.length);
 
   return (
-    <Router>
+    <Router basename="/Luz_indigo">
       <Routes>
         <Route path="/" element={
           <Home
