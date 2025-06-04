@@ -182,3 +182,42 @@
   background: #4b006e;
 }
 /* ...existing code... */
+
+.carousel-img {
+  width: 350px;
+  height: 250px;
+  max-width: 90vw;
+  max-height: 40vw;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+  .carousel-img {
+    width: 95vw;
+    height: auto;
+    max-height: 50vw;
+  }
+  .main-container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .footer, .header {
+    font-size: 0.9rem;
+    padding: 0.7rem 0;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .marcar-link {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
+/* ...existing code... */
