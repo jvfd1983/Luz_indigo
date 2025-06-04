@@ -4,9 +4,9 @@ import Contact from "./Contact";
 import "./App.css";
 
 const images = [
-  "/images/massagem1.png",
-  "/images/massagem2.png",
-  "/images/massagem3.png",
+  process.env.PUBLIC_URL + "/images/massagem1.png",
+  process.env.PUBLIC_URL + "/images/massagem2.png",
+  process.env.PUBLIC_URL + "/images/massagem3.png",
 ];
 
 function Home({ images, current, nextImage, prevImage }) {
