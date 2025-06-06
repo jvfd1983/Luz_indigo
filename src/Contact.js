@@ -1,51 +1,29 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./App.css";
+import React from "react";
 
 function Contact() {
-  const [form, setForm] = useState({ nome: "", email: "", mensagem: "" });
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Mensagem enviada! Obrigado pelo contato.");
-    setForm({ nome: "", email: "", mensagem: "" });
-  };
-
   return (
-    <div className="main-container">
-      <h2>Contato</h2>
-      <Link to="/" className="back-link">← Voltar à página principal</Link>
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="nome"
-          placeholder="Seu nome"
-          value={form.nome}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Seu email"
-          value={form.email}
-          onChange={handleChange}
-          required
-        />
-        <textarea
-          name="mensagem"
-          placeholder="Sua mensagem"
-          value={form.mensagem}
-          onChange={handleChange}
-          required
-        />
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
+    <section className="contact-simple">
+      <h1>Contato</h1>
+      <p>
+        <strong>Telefone:</strong>{" "}
+        <a href="tel:+351927559279" className="contact-link">+351 927 559 279</a>
+      </p>
+      <p>
+        <strong>Email:</strong>{" "}
+        <a href="mailto:luz.indigo579@gmail.com" className="contact-link">luz.indigo579@gmail.com</a>
+      </p>
+      <p>
+        <strong>Instagram:</strong>{" "}
+        <a
+          href="https://www.instagram.com/seu_instagram_aqui"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-link"
+        >
+          @seu_instagram_aqui
+        </a>
+      </p>
+    </section>
   );
 }
 

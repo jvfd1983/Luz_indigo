@@ -220,4 +220,149 @@
     padding: 0.7rem 1.2rem;
   }
 }
+/* Burger menu styles */
+.burger-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+.burger-bar {
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin: 5px 0;
+  background: #333;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.burger-menu {
+  position: fixed;
+  top: 0; left: -250px;
+  width: 220px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.12);
+  z-index: 1000;
+  transition: left 0.3s;
+  padding-top: 40px;
+}
+.burger-menu.open {
+  left: 0;
+}
+.burger-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+}
+.burger-nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+body {
+  background: linear-gradient(135deg, #4b006e 0%, #8e2de2 100%);
+}
+
+/* Botão fixo do burger menu */
+.burger-btn-fixed {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 1100;
+  background: #4b006e;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.burger-btn-fixed .burger-bar {
+  background: #fff;
+  width: 28px;
+  height: 4px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Burger menu lateral com cor indigo */
+.burger-menu {
+  position: fixed;
+  top: 0; left: -250px;
+  width: 220px;
+  height: 100%;
+  background: #4b006e;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.12);
+  z-index: 1200;
+  transition: left 0.3s;
+  padding-top: 40px;
+}
+.burger-menu.open {
+  left: 0;
+}
+.burger-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+}
+.burger-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+.burger-nav a:hover {
+  color: #e0c3fc;
+}
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
+}
+.contact-simple {
+  max-width: 400px;
+  margin: 60px auto 32px auto;
+  padding: 32px 20px;
+  background: #f3eafd;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(75, 0, 110, 0.10);
+  text-align: center;
+  color: #2d1457;
+}
+.contact-simple h1 {
+  color: #4b006e;
+  margin-bottom: 24px;
+  font-size: 2rem;
+}
+.contact-link {
+  color: #8e2de2;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact-link:hover {
+  text-decoration: underline;
+  color: #4b006e;
+}
 /* ...existing code... */
