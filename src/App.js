@@ -49,9 +49,18 @@ function Home({ images, current, nextImage, prevImage }) {
           <button onClick={nextImage} className="carousel-btn">{">"}</button>
         </div>
         <Link to="/marcacao" className="marcar-link">Marque já a sua terapia!</Link>
-        <footer className="footer">
-          <span>☎️+351 927 559 279</span> | <a href="mailto:luz.indigo579@gmail.com">📨 luz.indigo579@gmail.com</a>
-        </footer>
+<footer className="footer">
+  <span>☎️ +351 927 559 279</span> | 
+  <a href="mailto:luz.indigo579@gmail.com">📨 luz.indigo579@gmail.com</a> |
+  <a 
+    href="https://wa.me/351927559279" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="whatsapp-link"
+  >
+    💬 WhatsApp
+  </a>
+</footer>
       </div>
     </>
   );
