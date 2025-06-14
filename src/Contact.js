@@ -23,6 +23,17 @@ function Contact() {
           @seu_instagram_aqui
         </a>
       </p>
+      <p>
+        <strong>WhatsApp:</strong>{" "}
+        <a
+          href="https://wa.me/351927559279"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-link whatsapp-link"
+        >
+          Enviar mensagem
+        </a>
+      </p>
     </section>
   );
 }
