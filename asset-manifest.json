@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Luz_indigo/static/css/main.6b513fd5.css",
-    "main.js": "/Luz_indigo/static/js/main.b20112f4.js",
+    "main.css": "/Luz_indigo/static/css/main.0bd38167.css",
+    "main.js": "/Luz_indigo/static/js/main.cec5efd4.js",
     "static/js/453.69c05324.chunk.js": "/Luz_indigo/static/js/453.69c05324.chunk.js",
     "index.html": "/Luz_indigo/index.html",
-    "main.6b513fd5.css.map": "/Luz_indigo/static/css/main.6b513fd5.css.map",
-    "main.b20112f4.js.map": "/Luz_indigo/static/js/main.b20112f4.js.map",
+    "main.0bd38167.css.map": "/Luz_indigo/static/css/main.0bd38167.css.map",
+    "main.cec5efd4.js.map": "/Luz_indigo/static/js/main.cec5efd4.js.map",
     "453.69c05324.chunk.js.map": "/Luz_indigo/static/js/453.69c05324.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b513fd5.css",
-    "static/js/main.b20112f4.js"
+    "static/css/main.0bd38167.css",
+    "static/js/main.cec5efd4.js"
   ]
 }
